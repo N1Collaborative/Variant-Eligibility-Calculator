@@ -339,9 +339,9 @@
     <!-- Result 3.2 -->
     <div id="result3_2" class="container">
         <p class="decision-path">Step 0 - CNV - Whole gene deletion</p>
-        <h2>Consider variant for TANGO approach. Please review “Section C” in the N1C consensus guidelines. For TANGO approaches, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator. Please note that TANGO approaches for whole gene deletions only apply if there is still a functional wild-type copy. In case there is already a TANGO approach available for this variant, then this variant is considered eligible.</h2>
+        <h2>Consider variant for upregulation from WT allele. Please review “Section C” in the N1C consensus guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator. Please note that upregulation from the WT allele for whole gene deletions only applies if there is still a functional wildtype copy. In case there is already an approach available for this variant, then this variant is considered eligible.</h2>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Consider variant for TANGO approach. Please review Section C in the guidelines.')">Finish</button>
+            <button onclick="recordFinalDecision('Consider variant for upregulation from the WT allele. Please review Section C in the guidelines.')">Finish</button>
         </div>
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
@@ -514,10 +514,10 @@
         <p class="decision-path">Step 3 - Splice assessment </p>
         <h2>Eligibility: Not eligible for splice correction</h2>
         <p>For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>   
-        <p>Under rare circumstances, the variant could be considered for exon skipping. Please see guidelines “Step 3” for more detailed information. Variant could also be considered for TANGO approaches. Please pick the next guideline:</p>
+        <p>Under rare circumstances, the variant could be considered for exon skipping. Please see guidelines “Step 3” for more detailed information. Variant could also be considered for upregulation from the WT allele. Please pick the next guideline:</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibilty: Unable to assess for splice correction.', 'Jump to exon skipping', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="onAnswer('Eligibilty: Unable to assess for splice correction.', 'Jump to TANGO', 'a8_1_1_3_2')">TANGO</button>
+            <button onclick="onAnswer('Eligibilty: Unable to assess for splice correction.', 'Jump to upregulation from WT', 'a8_1_1_3_2')">WT upregulation</button>
             <button onclick="recordFinalDecision('Eligibilty: Unable to assess for splice correction.')">Finish</button>
         </div>
         <div class="navigation-buttons">
@@ -609,10 +609,10 @@
     <!-- TANGO approach -->
     <div id="a8_1_1_3_2" class="container">
         <p class="decision-path">Section C - Considerations for upregulation from the WT-allele</p>
-        <h2>Please review “Section C” in the N1C consensus guidelines. For TANGO approaches, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.</h2>
-        <p>In case there is a TANGO approach already available for the disorder with sufficient functional evidence, the variant is considered eligible for a TANGO approach.</p>
+        <h2>Please review “Section C” in the N1C consensus guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.</h2>
+        <p>In case there is an upregulation from the WT allele already available for the disorder with sufficient functional evidence, the variant is considered eligible.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('For TANGO approaches, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.')">Finish</button>
+            <button onclick="recordFinalDecision('For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.')">Finish</button>
         </div>
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
@@ -832,11 +832,11 @@
     <div id="q8_1_1_3_2" class="container">
         <p class="decision-path">Step 3 - Splice assessment - Missense variants or in-frame indels</p>
         <h2>Eligibility: Not eligible for splice correction</h2>
-        <p>The variant cannot be assessed for splice correction. The variant can be considered for exon skipping or a TANGO approach.</p>
+        <p>The variant cannot be assessed for splice correction. The variant can be considered for exon skipping or a upregulation from the WT allele.</p>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for a splice correction.', 'Jump to exon skipping.', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="onAnswer('Eligibility: Not eligible for a splice correction.', 'Jump to TANGO.', 'a8_1_1_3_2')">TANGO</button>
+            <button onclick="onAnswer('Eligibility: Not eligible for a splice correction.', 'Jump to upregulation from the WT allele.', 'a8_1_1_3_2')">WT upregulation</button>
             <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
         </div>
         <div class="navigation-buttons">
@@ -849,10 +849,10 @@
         <p class="decision-path">Step 3 - Splice assessment - Missense variants or in-frame indels</p>
         <h2>Eligibility: Unable to assess</h2>
         <p>The variant cannot be assessed for splice correction. Please obtain evidence for or against a splicing effect.</p>
-        <p>Under certain circumstances, the variant can be considered for exon skipping or a TANGO approach.</p>
+        <p>Under certain circumstances, the variant can be considered for exon skipping or upregulation from the WT allele.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to exon skipping.', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to TANGO.', 'a8_1_1_3_2')">TANGO</button>
+            <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to upregulation from the WT allele.', 'a8_1_1_3_2')">WT upregulation</button>
             <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction. Please obtain evidence for or against a splicing effect.')">Finish</button>
         </div>
         <div class="navigation-buttons">
@@ -1064,10 +1064,10 @@
     <div id="q7_1_1_5" class="container">
         <p class="decision-path">Step 3 - Splice assessment - whole exon duplication and deletion</p>
         <h2>Eligibility: Not eligible for splice correction</h2>
-        <p>If the deleted exon is in-frame, the variant is also not applicable to an exon skipping treatment. The variant can be considered for a TANGO approach in AD and possibly XLD disorders. If the variant is an out-of-frame exon deletion, check if any of the two adjacent exons could be skipped to get the transcript back into frame, then an exon skipping approach could be considered. If the deleted exon is the first or last coding exon, exon skipping is not a viable option (rare exceptions apply). Exon skipping might have to be allele-selective; please review “Section C” of the N1C consensus guidelines.</p>
+        <p>If the deleted exon is in-frame, the variant is also not applicable to an exon skipping treatment. The variant can be considered for upregulation from the WT allele in AD and possibly XLD disorders. If the variant is an out-of-frame exon deletion, check if any of the two adjacent exons could be skipped to get the transcript back into frame, then an exon skipping approach could be considered. If the deleted exon is the first or last coding exon, exon skipping is not a viable option (rare exceptions apply). Exon skipping might have to be allele-selective; please review “Section C” of the N1C consensus guidelines.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to exon skipping in case of out-of-frame exons' ,'q8_1_1_5_1')">Exon skipping</button>
-            <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to TANGO', 'a8_1_1_3_2')">TANGO</button>
+            <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to exon skipping in case of out-of-frame exons', 'q8_1_1_5_1')">Exon skipping</button>
+            <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to upregulation from the WT allele', 'a8_1_1_3_2')">WT upregulation</button>
             <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
         </div>
         <div class="navigation-buttons">
@@ -1181,7 +1181,7 @@
     <div id="a7_1_1_6" class="container">
         <p class="decision-path">Step 3 - Splice assessment - Whole exon duplication - Loss of function</p>
         <h2>Eligibility: Not eligible for splice correction</h2>
-        <p>If an exon duplication leads to a loss of function in a (autosomal) dominant disorder, a TANGO approach can be considered. Please review “Section C” in the N1C consensus guidelines. For TANGO approaches, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.</p>
+        <p>If an exon duplication leads to a loss of function in a (autosomal) dominant disorder, an upregulation from the WT allele can be considered. Please review “Section C” in the N1C consensus guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.</p>
         <div class="buttons">
              <button onclick="recordFinalDecision('Eligibility: Not eligible for a splice correction.')">Finish</button>
         </div>
@@ -1330,7 +1330,7 @@
             <button onclick="onAnswer('Assessment for', 'Exon skipping whole exon deletion', 'q8_1_1_5_1')">Exon skipping whole exon deletion</button>
             <button onclick="onAnswer('Assessment for', 'Exon skipping whole exon duplication', 'a7_1_1_6')">Exon skipping whole exon duplication</button>
             <button onclick="onAnswer('Jump to', 'Knockdown', 'q7_1_2_2')">Knockdown</button>
-            <button onclick="onAnswer('Jump to', 'TANGO', 'a8_1_1_3_2')">TANGO</button>
+            <button onclick="onAnswer('Jump to', 'Upregulation from the WT allele', 'a8_1_1_3_2')">WT upregulation</button>
         </div>
           <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
@@ -2165,10 +2165,10 @@
     <div id="q7_2_1_3_3" class="container">
         <p class="decision-path">Step 3 - Splice assessment - Autosomal recessive - Loss of function - Missense variants and in-frame indels</p>
         <h2>Eligibility: Unable to assess</h2>
-        <p> The variant cannot be assessed for splice correction. Under certain circumstances, the variant can be considered for exon skipping or TANGO approaches. Please review “Section A” (exon skipping) or "Section C" (TANGO) of the N1C consensus guidelines for further information.</p>
+        <p> The variant cannot be assessed for splice correction. Under certain circumstances, the variant can be considered for exon skipping or upregulation from the WT allele. Please review “Section A” (exon skipping) or "Section C" (upregulation from the WT allele) of the N1C consensus guidelines for further information.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess.', 'Jump to: exon skipping', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="onAnswer('Eligibility: Unable to assess.', 'Jump to: TANGO', 'a8_1_1_3_2')">TANGO</button>
+            <button onclick="onAnswer('Eligibility: Unable to assess.', 'Jump to: upregulation from the WT allele', 'a8_1_1_3_2')">WT upregulation</button>
             <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button> 
         </div>
         <div class="navigation-buttons">
@@ -2380,7 +2380,7 @@
     <div id="a7_1_1_7" class="container">
         <p class="decision-path">Step 2 - Pathomechanism - X-linked dominant - Loss of function</p>
         <h2>Eligibility: Not eligible for splice correction and exon skipping</h2>
-        <p>If an exon duplication leads to a loss of function in an XLD disorder, a TANGO approach can be considered. Please review “Section C” in the N1C consensus guidelines. For TANGO approaches, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator. Please also note that for XLD disorders further considerations apply due to X-inactivation. A TANGO approach is definitely not possible in hemizygotes.</p>
+        <p>If an exon duplication leads to a loss of function in an XLD disorder, upregulation from the WT allele can be considered. Please review “Section C” in the N1C consensus guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator. Please also note that for XLD disorders further considerations apply due to X-inactivation. Upregulation from the WT allele is definitely not possible in hemizygotes.</p>
         <div class="buttons">
             <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction and exon skipping.')">Finish</button>
         </div>
