@@ -2583,9 +2583,10 @@
         
         answerLog = `<p>${userText}</p><p><strong>Date & Time:</strong> ${formattedDateTime}</p>`; // Initialize the log with the user's text and the date/time
         newTab.document.write(`
-            <h1>Variant Assessment for Variant</h1>
+        <h1>Variant Assessment for Variant</h1>
         <div id="log">${answerLog}</div>
         <button id="downloadBtn">Download Assessment as PDF</button>
+
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -2595,6 +2596,23 @@
                 font-size: 14px;
             }
         </style>
+
+        <!-- Load jsPDF library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script>
+            // Function to download the log as a PDF
+            function downloadLog() {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                const logContent = document.getElementById('log').innerText; // Get the log content
+
+                doc.text(logContent, 10, 10); // Add log content to the PDF
+                doc.save('log.pdf'); // Save the PDF as 'log.pdf'
+            }
+
+            // Attach the downloadLog function to the download button
+            document.getElementById('downloadBtn').addEventListener('click', downloadLog);
+        </script>
     `);
 
     // Close the document to finish rendering
@@ -2611,7 +2629,7 @@
             doc.save('log.pdf'); // Save the PDF as 'log.pdf'
         });
     };
-        // Keep a reference to the new tab for future logging
+    newTab.document.close(); // Close the document stream
     window.newTab = newTab;
 }
 
