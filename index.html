@@ -2636,8 +2636,18 @@
         }
    
 </script>
+    
+        <!-- PDF Download Script -->
+<script>
+        function downloadLog() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            const logContent = document.getElementById('log').innerText; // Get the log content
 
-
+            doc.text(logContent, 10, 10); // Add the log content to the PDF
+            doc.save('log.pdf'); // Save the PDF as 'log.pdf'
+        }
+</script>
 
 </body>
 </html>
