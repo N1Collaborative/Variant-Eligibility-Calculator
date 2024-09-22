@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <title>N1C Variant Eligibility Calculator</title>
     <style>
         body, html {
@@ -2596,6 +2595,29 @@
                         font-size: 14px; /* Adjust the font size here */
                     }
                 </style>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+                <script>
+                // Function to download the log as a PDF
+                function downloadLog() {
+                    const { jsPDF } = window.jspdf;
+                    const doc = new jsPDF();
+                    const logContent = document.getElementById('log').innerText; // Get the log content
+
+                    doc.text(logContent, 10, 10); // Add the log content to the PDF
+                    doc.save('log.pdf'); // Save the PDF as 'log.pdf'
+                    }
+                </script>
+                <script>
+                    // Function to download the log as a PDF
+                    function downloadLog() {
+                        const { jsPDF } = window.jspdf;
+                        const doc = new jsPDF();
+                        const logContent = document.getElementById('log').innerText; // Get the log content
+
+                        doc.text(logContent, 10, 10); // Add the log content to the PDF
+                        doc.save('log.pdf'); // Save the PDF as 'log.pdf'
+                    }
+                </script>
             </head>
             <body>
                 <h1>Variant Assessment for Variant: </h1>
@@ -2636,18 +2658,5 @@
         }
    
 </script>
-    
-        <!-- PDF Download Script -->
-<script>
-        function downloadLog() {
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
-            const logContent = document.getElementById('log').innerText; // Get the log content
-
-            doc.text(logContent, 10, 10); // Add the log content to the PDF
-            doc.save('log.pdf'); // Save the PDF as 'log.pdf'
-        }
-</script>
-
 </body>
 </html>
