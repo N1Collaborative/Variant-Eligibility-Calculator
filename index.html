@@ -2583,45 +2583,37 @@
         
         answerLog = `<p>${userText}</p><p><strong>Date & Time:</strong> ${formattedDateTime}</p>`; // Initialize the log with the user's text and the date/time
         newTab.document.write(`
-        <h1>Variant Assessment for Variant</h1>
-        <div id="log">${answerLog}</div>
-        <button id="downloadBtn">Download Assessment as PDF</button>
-
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                padding: 20px;
-            }
-            #log {
-                font-size: 14px;
-            }
-        </style>
-
-        <!-- Load jsPDF library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-        <script>
-            // Function to download the log as a PDF
-            function downloadLog() {
-                const { jsPDF } = window.jspdf;
-                const doc = new jsPDF();
-                const logContent = document.getElementById('log').innerText; // Get the log content
-
-                doc.text(logContent, 10, 10); // Add log content to the PDF
-                doc.save('log.pdf'); // Save the PDF as 'log.pdf'
-            }
-
-            // Attach the downloadLog function to the download button
-            document.getElementById('downloadBtn').addEventListener('click', downloadLog);
-        </script>
+        <html lang="en">
+        <head>
+            <title>Question and Answer Log</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    padding: 20px;
+                }
+                #log {
+                    font-size: 14px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Variant Assessment for Variant</h1>
+            <div id="log">${answerLog}</div>
+            <button id="downloadBtn">Download Assessment as PDF</button>
+        </body>
+        </html>
     `);
 
-    // Close the document to finish rendering
+   // Close the document to finish rendering
     newTab.document.close();
-
-    // Attach the downloadLog function and event listener to the new tab after the document is closed
-    newTab.onload = function() {
+        
+    // Now inject the jsPDF script and attach the download button function
+    const scriptTag = newTab.document.createElement('script');
+    scriptTag.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+    scriptTag.onload = function() {
+        // Attach the downloadLog function after jsPDF is loaded
         newTab.document.getElementById('downloadBtn').addEventListener('click', function() {
-            const { jsPDF } = window.jspdf;
+            const { jsPDF } = newTab.jspdf;
             const doc = new jsPDF();
             const logContent = newTab.document.getElementById('log').innerText;
 
@@ -2629,9 +2621,14 @@
             doc.save('log.pdf'); // Save the PDF as 'log.pdf'
         });
     };
-    newTab.document.close(); // Close the document stream
+
+    // Append the script tag to the new tab's document
+    newTab.document.body.appendChild(scriptTag);
+
+    // Save a reference to the new tab for logging purposes
     window.newTab = newTab;
-}
+    }
+
 
     // Function to record answers and update the log in the new tab
     function recordAnswer(question, answer) {
