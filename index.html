@@ -155,6 +155,7 @@
         <p>If you have any questions about the calculator or suggestions for improvement, please reach out to Marlen Lauffer (marlen@n1collaborative.org).</p>
         
         <!-- Input field for the user to enter their text -->
+        <h2>Answer log</h2>
         <p>In case you want to log your answers and have a written confirmation of your assessment and the classification, please input your variant for assessment here and click submit. This will open a new tab and enable a system that records your answers. You can then start the assessment. Logging your answers is optional. The assessments will not be recorded on N1C side and are solely for you.</p>
         <input type="text" id="userText" placeholder="Enter your text here" style="margin-bottom: 20px;">
         <div class="buttons">
@@ -185,9 +186,11 @@
         <p class="decision-path">Step 0 - Variant check</p>
         <h2>Is the variant description correct and conform with the HGVS nomenclature?</h2>
         <p>For guidance on how to check for HGVS conform nomenclature, please read “Step 0” of the N1C VARIANT guidelines. You can check the variant description using <a href="https://variantvalidator.org/"target="_blank">VariantValidator</a> or <a href="https://mutalyzer.nl/"target="_blank">Mutalyzer</a>.</p>
+        <h2>Is the variant the disease-causing variant?</h2>
+        <p>We recommend only assessing likely pathogenic and pathogenic variants for eligibility towards ASO treatments as discussed in our guidelines. An exception are VUSes that are identified in trans with a (likely) pathogenic variant in a recessive disorder. For more information on pathogenicity assessment of variants, we recommend following the current ACMG-AMP guidelines.</a>.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Variant description HGVS conform?', 'Yes', 'q2')">Yes</button>
-            <button onclick="onAnswer('Variant description HGVS conform?', 'No', 'a1')">No</button>
+            <button onclick="onAnswer('Variant description HGVS conform and variant disease-causing?', 'Yes', 'q2')">Yes</button>
+            <button onclick="onAnswer('Variant description HGVS conform and variant disease-causing?', 'No', 'a1')">No</button>
         </div>
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
@@ -198,8 +201,8 @@
     <div id="a1" class="container">
         <p class="decision-path">Step 0 - Variant check</p>
         <h2>Eligibility: Unable to assess</h2>
-        <p>Please check with the referring clinician or patient (family) to receive the correct variant description.</p>
-        <button onclick="recordFinalDecision('Eligibility: Unable to assess. The variant is not conform with the HGVS nomenclature.')">Finish</button>
+        <p>Please check with the referring clinician or patient (family) to receive the correct variant description or information on the disease-causing variant.</p>
+        <button onclick="recordFinalDecision('Eligibility: Unable to assess. The variant is not conform with the HGVS nomenclature or is not the disease-causing variant.')">Finish</button>
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -210,7 +213,24 @@
     <div id="q2" class="container">
         <p class="decision-path">Step 0 - Variant check</p>
         <h2>Is the variant of a type applicable to be evaluated with these guidelines?</h2>
-        <p>Variants applicable to these guidelines are restricted to single nucleotide variants, small indels, one or multi-exon deletions or duplications, and full gene deletions or duplications. Currently excluded are variants in non-coding genes, deletions/duplications spanning multiple genes (i.e., contiguous gene syndromes), imprinting defects/uniparental disomy, structural rearrangements (e.g., translocations), and aneuploidies. Please also see “Step 0” of the N1C VARIANT guidelines for further explanations.</p>
+        <p>Variants applicable to these guidelines are:
+        <ul class="aligned-list">
+            <li>single nucleotide variants</li>
+            <li>small indels</li>
+            <li>one or multi-exon deletions or duplications</li>
+            <li>full gene deletions or duplications)</li>
+        </ul>
+        <p>Currently excluded are:</p>
+         <!-- Ordered list with custom list style -->
+        <ul class="aligned-list">
+            <li>variants in non-coding genes</li>
+            <li>deletions/duplications spanning multiple genes (i.e., contiguous gene syndromes)</li>
+            <li>imprinting defects/uniparental disomy</li>
+            <li>structural rearrangements (e.g., translocations)</li>
+            <li>aneuploidies</li>
+            <li>Mitochondrially inherited disorders (mtDNA variants)</li>
+        </ul>
+        <p>Please also see “Step 0” of the N1C VARIANT guidelines for further explanations.</p>
         <div class="buttons">
             <button onclick="onAnswer('Variant applicable to guidelines?', 'Yes','q3')">Yes</button>
             <button onclick="onAnswer('Variant applicable to guidelines?', 'No','a2')">No</button>
@@ -225,7 +245,7 @@
         <p class="decision-path">Step 0 - Variant check</p>
         <h2>Eligibility: Unable to assess</h2>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess. Variant is not of type applicable to these guidelines.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess. Variant is not of a type applicable to these guidelines.')">Finish</button>
         </div>
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
