@@ -1368,11 +1368,12 @@
         <p class="decision-path">Step 3 - Splice assessment - Gain of function and dominant negative variants - Nonsense and frameshift variants</p>
         <h2> Nonsense and frameshift variants leading to splice aberrations and causing a GoF or DN effect can be corrected with a splice correction ASO. By correcting splicing, the variants will cause a loss of function effect on protein level due to the amino acid changes. In such cases, it is also less relevant whether canonical splicing is affected, as a reduction of the toxic GoF effect is the goal, however, attention to haploinsufficiency should be paid. Is the disorder associated with haploinsufficiency?</h2>
         <p>For guidance on how to assess for haploinsufficiency and dosage sensitivity, please read “Step 2” of the N1C VARIANT guidelines or “Section B”. For a quick evaluation, we recommend using the Dosage Sensitivity curations from <a href="https://search.clinicalgenome.org/kb/gene-dosage?page=1&size=25&search="target="_blank">ClinGen</a>.</p>
-        <p>Note that it is also possible to target these variants with a knockdown approach.</p>
+        <p>Note that it is also possible to target these variants with a knockdown approach or exon skipping.</p>
         <div class="buttons">
             <button onclick="onAnswer('Gene associated with haploinsufficiency?', 'Yes', 'q10_2_1')">Yes</button>
             <button onclick="onAnswer('Gene associated with haploinsufficiency?', 'No', 'q10_2_2')">No</button>
             <button onclick="onAnswer('GoF and DN variants', 'Jump to knockdown', 'q7_1_2_2')">Knockdown</button>
+            <button onclick="onAnswer('GoF and DN variants', 'Jump to exon skipping', 'q7_1_1_4')">Exon skipping</button>
         </div>
           <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
@@ -1522,7 +1523,7 @@
                 showPage('q9_1_1_6');
             } else if (canonical_splicing_weakened_2_1 || variant_within_6to15bp_2_1) {
                 showPage('q9_1_1_7');
-            } else if (none_2) {
+            } else if (none_2_1) {
                 showPage('q9_1_1_8');
             }
         }
