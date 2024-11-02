@@ -1484,10 +1484,10 @@
         <p>To identify which boxes should be ticked, please carefully read “Step 3” of the N1C VARIANT guidelines.</p>
         <div class="checkboxes">
             <label><input type="checkbox" id="canonical_splicing_destroyed_2_1"> Canonical splicing is destroyed</label>
-            <label><input type="checkbox" id="canonical_splicing_weakened_2_2"> Canonical splicing is weakened</label>
-            <label><input type="checkbox" id="variant_within_5bp_2_2"> Variant within 5 bp of canonical splice site</label>
-            <label><input type="checkbox" id="variant_within_6to15bp_2_2"> Variant within 6 to 15 bp of canonical splice site</label>
-            <label><input type="checkbox" id="none_2_2"> None</label>
+            <label><input type="checkbox" id="canonical_splicing_weakened_2_1"> Canonical splicing is weakened</label>
+            <label><input type="checkbox" id="variant_within_5bp_2_1"> Variant within 5 bp of canonical splice site</label>
+            <label><input type="checkbox" id="variant_within_6to15bp_2_1"> Variant within 6 to 15 bp of canonical splice site</label>
+            <label><input type="checkbox" id="none_2_1"> None</label>
         </div>
         <div class="buttons">
             <button onclick="evaluateQ9_3()">Next</button>
@@ -1581,7 +1581,7 @@
             
             if (canonical_splicing_destroyed_1_1 || variant_within_5bp_1_1) {
                 showPage('q9_1_1_6');
-            } else if (intronic_variant_within_1_1 || (canonical_splicing_weakened_1 && (intronic_variant_upstream_1_1 || intronic_variant_downstream_1_1 || intronic_variant_within_1_1))) {
+            } else if (intronic_variant_within_1_1 || (canonical_splicing_weakened_1_1 && (intronic_variant_upstream_1_1 || intronic_variant_downstream_1_1 || intronic_variant_within_1_1))) {
                 showPage('q9_1_1_7');
             } else  if (intronic_variant_upstream_1_1 || intronic_variant_downstream_1_1 || (canonical_splicing_not_weakened_1_1 && (intronic_variant_upstream_1_1 || intronic_variant_downstream_1_1 || intronic_variant_within_1_1))) {
                 showPage('q9_1_1_8');
