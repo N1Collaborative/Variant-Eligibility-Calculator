@@ -119,16 +119,15 @@
             cursor: pointer;
         }
 
+
         .aligned-list {
-            list-style-type: disc; /* Bullet points */
+            list-style-type: disc;
             list-style-position: inside;
             padding-left: 0;
-            margin-left: 0;
-            text-align: left;
-        }
-
-        .aligned-list li {
-            margin-bottom: 10px;
+            text-align: center; /* Center-aligns list text */
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block; /* Allows the list to be centered as a block element */
         }
     </style>
 </head>
@@ -187,7 +186,7 @@
         <h2>Is the variant description correct and conform with the HGVS nomenclature?</h2>
         <p>For guidance on how to check for HGVS conform nomenclature, please read “Step 0” of the N1C VARIANT guidelines. You can check the variant description using <a href="https://variantvalidator.org/"target="_blank">VariantValidator</a> or <a href="https://mutalyzer.nl/"target="_blank">Mutalyzer</a>.</p>
         <h2>Is the variant the disease-causing variant?</h2>
-        <p>We recommend only assessing likely pathogenic and pathogenic variants for eligibility towards ASO treatments as discussed in our guidelines. An exception are VUSes that are identified in trans with a (likely) pathogenic variant in a recessive disorder. For more information on pathogenicity assessment of variants, we recommend following the current ACMG-AMP guidelines.</a>.</p>
+        <p>We recommend only assessing likely pathogenic and pathogenic variants for eligibility towards ASO treatments as discussed in our guidelines. An exception are VUSes that are identified in trans with a (likely) pathogenic variant in a recessive disorder. For more information on pathogenicity assessment of variants, we recommend following the current ACMG-AMP guidelines.</p>
         <div class="buttons">
             <button onclick="onAnswer('Variant description HGVS conform and variant disease-causing?', 'Yes', 'q2')">Yes</button>
             <button onclick="onAnswer('Variant description HGVS conform and variant disease-causing?', 'No', 'a1')">No</button>
