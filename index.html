@@ -420,7 +420,7 @@
             <button onclick="onAnswer('Variant type', 'Synonymous variant', 'q7_1_1_2')">Synonymous</button>
             <button onclick="onAnswer('Variant type', 'Small in-frame indel', 'q7_1_1_3')">Small in-frame indel</button>
             <button onclick="onAnswer('Variant type', 'Whole exon duplication', 'q7_1_1_5')">Whole exon duplication</button>
-            <button onclick="onAnswer('Variant type', 'Whole exon deletion', 'q7_1_1_6')">Whole exon deletion</button>
+            <button onclick="onAnswer('Variant type', 'Whole exon deletion', 'a7_1_1_6')">Whole exon deletion</button>
             <button onclick="onAnswer('Variant type', 'Intronic', 'q7_1_1_1')">Intronic</button>
         </div>
         <div class="navigation-buttons">
@@ -1191,7 +1191,7 @@
         <h2>Eligibility: Not eligible for splice correction</h2>
         <p>If the deleted exon is in-frame, the variant is also not applicable to an exon skipping treatment. The variant can be considered for upregulation from the WT allele in AD and possibly XLD disorders. If the variant is an out-of-frame exon deletion, check if any of the two adjacent exons could be skipped to get the transcript back into frame, then an exon skipping approach could be considered. If the deleted exon is the first or last coding exon, exon skipping is not a viable option (rare exceptions apply). Exon skipping might have to be allele-selective; please review “Section C” of the N1C VARIANT guidelines.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to exon skipping in case of out-of-frame exons', 'q8_1_1_5_1')">Exon skipping</button>
+            <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to exon skipping in case of out-of-frame exons', 'q8_1_1_5_1')">Exon skipping out-of-frame exon</button>
             <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to upregulation from the WT allele', 'a8_1_1_3_2')">WT upregulation</button>
             <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
         </div>
@@ -1776,6 +1776,10 @@
         <div class="buttons">
             <button onclick="onAnswer('Assessment for', 'Splicing', 'q7_2')">Splicing</button>
             <button onclick="onAnswer('Assessment for', 'Knockdown', 'q6_1_3_2_1')">Knockdown</button>
+        </div>
+        <div class="navigation-buttons">
+            <button onclick="goBack()">Back</button>
+            <button onclick="showPage('startPage')">Back to Start</button>
         </div>
     </div>
 
