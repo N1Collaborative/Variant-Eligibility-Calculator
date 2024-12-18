@@ -166,8 +166,17 @@
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
         </div>
+        <div id="lastUpdated" style="margin-top: 20px; font-size: 14px; color: gray;"></div>
     </div>
+        
+    <script>
+        // Set the last updated date here
+        const lastUpdatedDate = "December 18, 2024"; // Replace with your actual update date
 
+        // Display the date on the start page
+        document.getElementById('lastUpdated').innerText = `Last updated: ${lastUpdatedDate}`;
+    </script>
+        
   <!-- Disclaimer -->
     <div id="disclaimer" class="container">
         <h2>Disclaimer</h2>
@@ -308,7 +317,7 @@
         </div>
     </div>
 
-    <div id="result3_1__1_2" class="container">
+    <div id="result3_1_1_2" class="container">
         <p class="decision-path">Step 0 - CNV - Whole gene duplication</p>
         <h2>Eligibility: Likely eligible for a knockdown approach </h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
