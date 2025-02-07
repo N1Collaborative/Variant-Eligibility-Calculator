@@ -226,7 +226,14 @@
         <p class="decision-path">Step 0 - Variant check</p>
         <h2>Eligibility: Unable to assess</h2>
         <p>Please check with the referring clinician or patient (family) to receive the correct variant description or information on the disease-causing variant.</p>
-        <button onclick="recordFinalDecision('Eligibility: Unable to assess. The variant is not conform with the HGVS nomenclature or is not the disease-causing variant.')">Finish</button>
+        <button onclick="recordFinalDecision('Eligibility: Unable to assess. The variant is not conform with the HGVS nomenclature or is not the disease-causing variant.', 'comment_a1')">Finish</button>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a1" placeholder="Please type your text here.">
+        </div> 
+
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -269,8 +276,14 @@
         <p class="decision-path">Step 0 - Variant check</p>
         <h2>Eligibility: Unable to assess</h2>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess. Variant is not of a type applicable to these guidelines.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess. Variant is not of a type applicable to these guidelines.', 'comment_a2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -326,8 +339,14 @@
         <h2>Eligibility: Eligible for a knockdown approach</h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.', 'comment_result3_1_1_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result3_1_1_1" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -339,8 +358,14 @@
         <h2>Eligibility: Likely eligible for a knockdown approach </h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Likely eligible for a knockdown approach.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Likely eligible for a knockdown approach.', 'comment_result3_1_1_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result3_1_1_2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -366,8 +391,14 @@
         <h2>Eligibility: Eligible for a knockdown approach</h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">  
-            <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.', 'comment_result3_1_2_yes')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result3_1_2_yes" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -379,8 +410,14 @@
         <h2>Eligibility: Unlikely eligible for a knockdown approach</h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for a knockdown approach.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for a knockdown approach.', 'comment_result3_1_2_no')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result3_1_2_no" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -392,8 +429,14 @@
         <p class="decision-path">Step 0 - CNV - Whole gene deletion</p>
         <h2>Consider variant for upregulation from WT allele. Please review “Section C” in the N1C VARIANT guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator. Please note that upregulation from the WT allele for whole gene deletions only applies if there is still a functional wildtype copy. In case there is already an approach available for this variant, then this variant is considered eligible.</h2>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Consider variant for upregulation from the WT allele. Please review Section C in the guidelines.')">Finish</button>
+            <button onclick="recordFinalDecision('Consider variant for upregulation from the WT allele. Please review Section C in the guidelines.', 'comment_result3_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result3_2" placeholder="Please type your text here.">
+        </div> 
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -432,15 +475,15 @@
         <h2>What is the pathomechanism of the variant under assessment?</h2>
         <p>For guidance on how to determine the pathomechanism of a given variant, please read “Step 2” of the N1C VARIANT guidelines.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Pathomechanism of variant', 'Loss of function', 'q6_1_1')">Loss of function</button>
-            <button onclick="onAnswer('Pathomechanism of variant', 'Gain of function', 'q6_1_2')">Gain of function</button>
-            <button onclick="onAnswer('Pathomechanism of variant', 'Dominant negative', 'q6_1_3')">Dominant negative</button>
+            <button onclick="onAnswer('Pathomechanism of variant', 'Loss of function', 'q6_1_1', 'comment_q6_1_1')">Loss of function</button>
+            <button onclick="onAnswer('Pathomechanism of variant', 'Gain of function', 'q6_1_2', 'comment_q6_1_1')">Gain of function</button>
+            <button onclick="onAnswer('Pathomechanism of variant', 'Dominant negative', 'q6_1_3', 'comment_q6_1_1')">Dominant negative</button>
             <button onclick="onAnswer('Pathomechanism of variant', 'Unknown', 'q6_1_4')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q6_1_1" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -474,14 +517,14 @@
         <h2>Is there functional evidence of a splicing effect?</h2>
         <p>For guidance on how to determine whether a variant affects splicing, please see “Step 3” of the N1C VARIANT guidelines. There should be functional evidence of a splicing effect based on e.g., RNAseq, cDNA data. Splice predictions are not considered sufficient evidence.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_1_1')">Yes</button>
-            <button onclick="onAnswer('Splicing effect?', 'No', 'result7_1_1_1_2')">No</button>
-            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'result7_1_1_1_3')">Unknown</button>
+            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_1_1', 'comment_q7_1_1_1')">Yes</button>
+            <button onclick="onAnswer('Splicing effect?', 'No', 'result7_1_1_1_2', 'comment_q7_1_1_1')">No</button>
+            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'result7_1_1_1_3', 'comment_q7_1_1_1')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q7_1_1_1" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -544,7 +587,7 @@
             // Log the selected options
             // Replace the question label with your custom label
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "),'comment_q8_1_1');
             
             if (canonical_splicing_destroyed_1 || variant_within_5bp_1) {
                 showPage('q9_1_1_3');
@@ -561,13 +604,13 @@
         <h2>Has there already been an ASO developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_1_2')">No</button>
+            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_1_1', 'comment_q9_1_1_1')">Yes</button>
+            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_1_2', 'comment_q9_1_1_1')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q9_1_1_1" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -582,13 +625,13 @@
         <h2>Has there already been an ASO developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_2_1')">Yes</button>
-            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_2_2')">No</button>
+            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_2_1', 'comment_q9_1_1_2')">Yes</button>
+            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_2_2', 'comment_q9_1_1_2')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q9_1_1_2" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -606,8 +649,15 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to exon skipping', 'q7_1_1_4')">Exon skipping</button>
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to upregulation from WT', 'a8_1_1_3_2')">WT upregulation</button>
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction.', 'comment_q9_1_1_3')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q9_1_1_3" placeholder="Please type your text here.">
+        </div> 
+
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -620,8 +670,14 @@
         <h2>Eligibility: Eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
          <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.', 'comment_result9_1_1_1_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_1_1" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -633,8 +689,15 @@
         <h2>Eligibility: Likely eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
          <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.', 'comment_result9_1_1_1_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_1_2" placeholder="Please type your text here.">
+        </div> 
+
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -646,8 +709,15 @@
         <h2>Eligibility: Eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
        <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.', 'comment_result9_1_1_2_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_2_1" placeholder="Please type your text here.">
+        </div> 
+
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -659,8 +729,14 @@
         <h2>Eligibility: Unlikely eligible for splice correction</h2>
         <p> For further information, please see the <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
        <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.', 'comment_result9_1_1_2_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_2_2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -673,8 +749,14 @@
         <h2> Eligibility: Unable to assess</h2>
         <p>The variant cannot be assessed for splice correction. If this variant is predicted to have an effect on splicing, please obtain functional evidence for a splicing effect.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess', 'comment_result7_1_1_1_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result7_1_1_1_2" placeholder="Please type your text here.">
+        </div> 
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -686,8 +768,14 @@
              <h2> Eligibility: Unable to assess.</h2>
             <p>The variant cannot be assessed for splice correction. Please obtain evidence for or against a splicing effect.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibilty: Unable to assess. Please obtain evidence for or against a splicing effect.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibilty: Unable to assess. Please obtain evidence for or against a splicing effect.', 'comment_result7_1_1_1_3')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result7_1_1_1_3" placeholder="Please type your text here.">
+        </div> 
+            
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -700,8 +788,14 @@
         <h2>Please review “Section C” in the N1C VARIANT guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.</h2>
         <p>In case there is an upregulation from the WT allele already available for the disorder with sufficient functional evidence, the variant is considered eligible.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.')">Finish</button>
+            <button onclick="recordFinalDecision('For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.', 'comment_a8_1_1_3_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_1_3_2" placeholder="Please type your text here.">
+        </div> 
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -714,14 +808,14 @@
         <h2>Is there functional evidence of a splicing effect?</h2>
         <p>For guidance on how to determine whether a variant affects splicing, please see “Step 3” of the N1C VARIANT guidelines. There should be functional evidence of a splicing effect based on e.g., RNAseq, cDNA data. Splice predictions are not considered sufficient evidence.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_1_1_2_1')">Yes</button>
-            <button onclick="onAnswer('Splicing effect?', 'No', 'result7_1_1_2_1')">No</button>
-            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'result7_1_1_2_2')">Unknown</button>
+            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_1_1_2_1', 'comment_q7_1_1_2')">Yes</button>
+            <button onclick="onAnswer('Splicing effect?', 'No', 'result7_1_1_2_1', 'comment_q7_1_1_2')">No</button>
+            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'result7_1_1_2_2', 'comment_q7_1_1_2')">Unknown</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q7_1_1_2" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -745,7 +839,7 @@
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q8_1_1_2_1" placeholder="Please type your text here.">
         </div>
         
         <div class="buttons">
@@ -776,7 +870,7 @@
 
             // Replace the question label with your custom label
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_1_1_2_1');
 
             if (canonical_splicing_destroyed_2 || variant_within_5bp_2) {
                 showPage('q9_1_1_3');
@@ -793,8 +887,15 @@
         <p class="decision-path">Step 3 - Splice assessment - Synonymous variant</p>
         <h2>Eligibility: Unable to assess </h2>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess', 'comment_result7_1_1_2_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result7_1_1_2_1" placeholder="Please type your text here.">
+        </div> 
+
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -806,8 +907,14 @@
         <h2>Eligibility: Unable to assess</h2>
         <p>The variant cannot be assessed for splice correction. Please obtain evidence for or against a splicing effect.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess', 'comment_result7_1_1_2_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result7_1_1_2_2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -820,14 +927,14 @@
         <h2>Is there functional evidence of a splicing effect?</h2>
         <p>For guidance on how to determine whether a variant affects splicing, please see “Step 3” of the N1C VARIANT guidelines. There should be functional evidence of a splicing effect based on e.g., RNAseq, cDNA data. Splice predictions are not considered sufficient evidence.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_1_1_3_1')">Yes</button>
-            <button onclick="onAnswer('Splicing effect?', 'No', 'q8_1_1_3_2')">No</button>
-            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'q8_1_1_3_3')">Unknown</button>
+            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_1_1_3_1', 'comment_q7_1_1_3')">Yes</button>
+            <button onclick="onAnswer('Splicing effect?', 'No', 'q8_1_1_3_2', 'comment_q7_1_1_3')">No</button>
+            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'q8_1_1_3_3', 'comment_q7_1_1_3')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q7_1_1_3" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -855,7 +962,7 @@
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q8_1_1_3_1" placeholder="Please type your text here.">
         </div>
 
         <div class="buttons">
@@ -894,7 +1001,7 @@
             
             // Replace the question label with your custom label
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_1_1_3_1');
     
             if (canonical_splicing_destroyed_3 || variant_within_5bp_3 || amino_acid_complete_lof_3) {
                 showPage('q9_1_1_6');
@@ -918,8 +1025,14 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to exon skipping', 'q7_1_1_4')">Exon skipping</button>
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Knockdown', 'q7_1_2_2')">Knockdown</button>
-            <button onclick="recordFinalDecision('Eligibilty: Unable to assess for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibilty: Unable to assess for splice correction.', 'comment_q9_1_1_6')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q9_1_1_6" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -931,13 +1044,13 @@
         <h2>Has there already been an ASO developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_8_1')">Yes</button>
-            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_8_2')">No</button>
+            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_8_1', 'comment_q9_1_1_8')">Yes</button>
+            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_8_2', 'comment_q9_1_1_8')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q9_1_1_8" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -952,13 +1065,13 @@
         <h2>Has there already been an ASO developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_7_1')">Yes</button>
-            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_7_2')">No</button>
+            <button onclick="onAnswer('ASO already available?', 'Yes', 'result9_1_1_7_1', 'comment_q9_1_1_7')">Yes</button>
+            <button onclick="onAnswer('ASO already available?', 'No', 'result9_1_1_7_2', 'comment_q9_1_1_7')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q9_1_1_7" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -972,8 +1085,14 @@
         <h2>Eligibility: Eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
          <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.', 'comment_result9_1_1_8_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_8_1" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -985,8 +1104,15 @@
         <h2>Eligibility: Likely eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
          <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.', 'comment_result9_1_1_8_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_8_2" placeholder="Please type your text here.">
+        </div> 
+
+    
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -998,8 +1124,14 @@
         <h2>Eligibility: Eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
        <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.', 'comment_result9_1_1_7_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_7_1" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1014,8 +1146,14 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to exon skipping', 'q7_1_1_4')">Exon skipping</button>
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Knockdown', 'q7_1_2_2')">Knockdown</button>
-            <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.', 'comment_result9_1_1_7_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_result9_1_1_7_2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1030,8 +1168,14 @@
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for a splice correction.', 'Jump to exon skipping.', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for a splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for a splice correction.', 'comment_q9_1_1_4')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q9_1_1_4" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1045,8 +1189,14 @@
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to exon skipping.', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction.', 'comment_a8_1_1_3_1_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_1_3_1_1" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1061,8 +1211,14 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for a splice correction.', 'Jump to exon skipping.', 'q7_1_1_4')">Exon skipping</button>
             <button onclick="onAnswer('Eligibility: Not eligible for a splice correction.', 'Jump to upregulation from the WT allele.', 'a8_1_1_3_2')">WT upregulation</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.', 'comment_q8_1_1_3_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q8_1_1_3_2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1077,8 +1233,14 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to exon skipping.', 'q7_1_1_4')">Exon skipping</button>
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction.', 'Jump to upregulation from the WT allele.', 'a8_1_1_3_2')">WT upregulation</button>
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction. Please obtain evidence for or against a splicing effect.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction. Please obtain evidence for or against a splicing effect.', 'comment_q8_1_1_3_3')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q8_1_1_3_3" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1099,13 +1261,13 @@
         <li>Gene contains only one coding exon</li>
      </ul>
         <div class="buttons">
-            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'Yes', 'a7_1_1_4')">Yes</button>
-            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'No', 'q8_1_3')">No</button>
+            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'Yes', 'a7_1_1_4', 'comment_q7_1_1_4')">Yes</button>
+            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'No', 'q8_1_3', 'comment_q7_1_1_4')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q7_1_1_4" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -1120,8 +1282,14 @@
         <p>Please check for exceptions described in “Section A” of the N1C VARIANT guidelines.</p>
         <p>For further information on the classification, please see the <a href="exon_skipping_table.jpg" target="_blank">classification table</a> for exon skipping.</p> 
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.', 'comment_a7_1_1_4')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_1_4" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1150,7 +1318,7 @@
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q8_1_3" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -1186,7 +1354,7 @@
                 
                 // Replace the question label with your custom label
                 const customLabel = "Exon properties";
-                recordAnswer(customLabel, selectedOptions.join(", "));
+                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_1_3');
 
 
                 if (loss_only_domain_4 || loss_important_domain_4 || (loss_10_percent_4 && loss_multiple_domains_4) || pathogenic_4 || mutational_hotspot_4 || in_frame_deletions_4) {
@@ -1208,8 +1376,14 @@
         <p>Please note exceptions listed in “Section A” of the N1C VARIANT guidelines.</p>
         <p>For further information on the classification, please see the <a href="exon_skipping_table.jpg" target="_blank">classification table</a> for exon skipping.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.', 'comment_a8_1_3_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_3_1" placeholder="Please type your text here.">
+        </div> 
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1221,8 +1395,14 @@
         <h2>Special considerations apply for repeat domains.</h2>
         <p>Please see “Section A” of the N1C VARIANT guidelines. Most suitable are in-frame exons that contain a single, full repeat of the tandem repeats and no additional domains. If an ASO has already been developed for this exon, we consider it eligible for exon skipping.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Special considerations apply for repeat domains. Please assess manually.')">Finish</button>
+             <button onclick="recordFinalDecision('Special considerations apply for repeat domains. Please assess manually.', 'comment_a8_1_3_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_3_2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1234,13 +1414,13 @@
         <h2>Is there already an exon skipping therapy available?</h2>
         <p>Please check for the exon in general and not only the variant in question. A suggestion of a possible search term in Pubmed is: ABCA4 AND ((ASO) OR (AON) OR (antisense oligonucleotide)) AND (Exon 17). Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already available?', 'Yes', 'a8_1_3_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO already available?', 'No', 'a8_1_3_1_2')">No</button>
+            <button onclick="onAnswer('ASO already available?', 'Yes', 'a8_1_3_1_1', 'comment_q8_1_3_1')">Yes</button>
+            <button onclick="onAnswer('ASO already available?', 'No', 'a8_1_3_1_2', 'comment_q8_1_3_1')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q8_1_3_1" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -1254,13 +1434,13 @@
         <h2>Is there already an ASO exon skipping therapy available?</h2>
         <p>Please check for the exon in general and not only the variant in question. A suggestion of a possible search term in Pubmed is: ABCA4 AND ((ASO) OR (AON) OR (antisense oligonucleotide)) AND (Exon 17). Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already available?', 'Yes', 'a8_1_3_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO already available?', 'No', 'a8_1_3_1_3')">No</button>
+            <button onclick="onAnswer('ASO already available?', 'Yes', 'a8_1_3_1_1', 'comment_q8_1_3_2')">Yes</button>
+            <button onclick="onAnswer('ASO already available?', 'No', 'a8_1_3_1_3', 'comment_q8_1_3_2')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q8_1_3_2" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -1274,8 +1454,14 @@
         <h2>Eligibility: Eligible for exon skipping</h2>
         <p>For further information on the classification, please see the <a href="exon_skipping_table.jpg" target="_blank">classification table</a> for exon skipping.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Eligible for exon skipping.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Eligible for exon skipping.', 'comment_a8_1_3_1_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_3_1_1" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1287,8 +1473,14 @@
         <h2>Eligibility: Unlikely eligible for exon skipping</h2>
         <p>For further information on the classification, please see the <a href="exon_skipping_table.jpg" target="_blank">classification table</a> for exon skipping.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for exon skipping.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for exon skipping.', 'comment_a8_1_3_1_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_3_1_2" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1300,8 +1492,14 @@
         <h2>Eligibility: Likely eligible for exon skipping</h2>
         <p>For further information on the classification, please see the <a href="exon_skipping_table.jpg" target="_blank">classification table</a> for exon skipping.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Likely eligible for exon skipping.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Likely eligible for exon skipping.', 'comment_a8_1_3_1_3')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_3_1_3" placeholder="Please type your text here.">
+        </div> 
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1316,8 +1514,14 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to exon skipping in case of out-of-frame exons', 'q8_1_1_5_1')">Exon skipping out-of-frame exon</button>
             <button onclick="onAnswer('Eligibility: Not eligible for splice correction', 'Jump to upregulation from the WT allele', 'a8_1_1_3_2')">WT upregulation</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.', 'comment_q7_1_1_5')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q7_1_1_5" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1335,13 +1539,13 @@
         <li>Gene contains only the two coding exons (deleted one and the one to be skipped)</li>
         </ul>
         <div class="buttons">
-            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'Yes', 'a8_1_1_5_1_1')">Yes</button>
-            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'No', 'q9_1_1_5')">No</button>
+            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'Yes', 'a8_1_1_5_1_1', 'comment_q8_1_1_5_1')">Yes</button>
+            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'No', 'q9_1_1_5' 'comment_q8_1_1_5_1')">No</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q8_1_1_5_1" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -1356,8 +1560,14 @@
         <p>Please check for exceptions as described in “Section A” of the N1C VARIANT guidelines.</p>
         <p>For further information on the classification, please see the <a href="exon_skipping_table.jpg" target="_blank">classification table</a> for exon skipping.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.', 'omment_a8_1_1_5_1_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_1_1_5_1_1" placeholder="Please type your text here.">
+        </div> 
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1386,7 +1596,7 @@
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q9_1_1_5" placeholder="Please type your text here.">
         </div>
 
         
@@ -1424,7 +1634,7 @@
                 
                 // Replace the question label with your custom label
                 const customLabel = "Exon and deleted exon properties";
-                recordAnswer(customLabel, selectedOptions.join(", "));
+                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_1_1_5');
 
             if (loss_only_functional_domain_5 || loss_important_functional_domain_5 || (loss_10_percent_5 && loss_multiple_functional_domains_5) || shown_pathogenic_5 || mutational_hotspot_5 || evidence_pathogenic_5) {
                 showPage('a8_1_3_1');
@@ -1444,8 +1654,14 @@
         <h2>Eligibility: Not eligible for splice correction</h2>
         <p>If an exon duplication leads to a loss of function in a (autosomal) dominant disorder, an upregulation from the WT allele can be considered. Please review “Section C” in the N1C VARIANT guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Not eligible for a splice correction.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Not eligible for a splice correction.', 'comment_a7_1_1_6')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_1_6" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1472,14 +1688,14 @@
         <h2>Is there functional evidence of a splicing effect?</h2>
         <p>For guidance on how to determine whether a variant affects splicing, please see “Step 3” of the N1C VARIANT guidelines. There should be functional evidence of a splicing effect based on e.g., RNAseq, cDNA data. Splice predictions are not considered sufficient evidence.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_2')">Yes</button>
-            <button onclick="onAnswer('Splicing effect?', 'No', 'q7_3')">No</button>
-            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'q7_4')">Unknown</button>
+            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_2', 'comment_q7_2')">Yes</button>
+            <button onclick="onAnswer('Splicing effect?', 'No', 'q7_3', 'comment_q7_2')">No</button>
+            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'q7_4', 'comment_q7_2')">Unknown</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q7_2" placeholder="Please type your text here.">
         </div>
         
         <div class="navigation-buttons">
@@ -1528,13 +1744,13 @@
         <h2>Is there already an ASO approach developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already developed?', 'Yes', 'a10_2_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO already developed?', 'No', 'a10_2_1_2')">No</button>
+            <button onclick="onAnswer('ASO already developed?', 'Yes', 'a10_2_1_1', 'comment_q10_2_1')">Yes</button>
+            <button onclick="onAnswer('ASO already developed?', 'No', 'a10_2_1_2', 'comment_q10_2_1')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q10_2_1" placeholder="Please type your text here.">
         </div>
         
           <div class="navigation-buttons">
@@ -1548,13 +1764,13 @@
         <h2>Is there already an ASO approach developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already developed?', 'Yes', 'a10_2_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO already developed?', 'No', 'a10_2_1_3')">No</button>
+            <button onclick="onAnswer('ASO already developed?', 'Yes', 'a10_2_1_1', 'comment_q10_2_2')">Yes</button>
+            <button onclick="onAnswer('ASO already developed?', 'No', 'a10_2_1_3', 'comment_q10_2_2')">No</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
         <div class="comment-box">
-        <input type="text" id="comment_q8_1_1" placeholder="Please type your text here.">
+        <input type="text" id="comment_q10_2_2" placeholder="Please type your text here.">
         </div>
         
           <div class="navigation-buttons">
@@ -1568,8 +1784,14 @@
         <h2>Eligibility: Eligible for splice correction.</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Eligible for splice correction.', 'comment_a10_2_1_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a10_2_1_1" placeholder="Please type your text here.">
+        </div> 
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1581,8 +1803,14 @@
         <h2>Eligibility: Unlikely eligible for splice correction.</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.', 'comment_a10_2_1_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a10_2_1_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1594,8 +1822,14 @@
         <h2>Eligibility: Likely eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.', 'comment_a10_2_1_3')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a10_2_1_3" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1623,8 +1857,14 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction', 'Jump to exon skipping', 'q7_1_1_4')">Exon skipping</button>
             <button onclick="onAnswer('Eligibility: Unable to assess for splice correction', 'Jump to knockdown', 'q7_1_2_2')">Knockdown</button>
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess for splice correction.', 'comment_q7_3')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q7_3" placeholder="Please type your text here.">
+        </div>
+        
           <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1677,7 +1917,7 @@
 
             // Replace the question label with your custom label
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_3');
 
             if (canonical_splicing_destroyed_2_1 || variant_within_5bp_2_1) {
                 showPage('q9_1_1_6');
@@ -1743,7 +1983,7 @@
             // Log the selected options
             // Replace the question label with your custom label
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_4');
             
             if (canonical_splicing_destroyed_1_1 || variant_within_5bp_1_1) {
                 showPage('q9_1_1_6');
@@ -1816,7 +2056,7 @@
 
                 // Replace the question label with your custom label
                 const customLabel = "Assessment for knockdown";
-                recordAnswer(customLabel, selectedOptions.join(", "));
+                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q7_1_2_2');
 
                 
                 if (intolerant_reduction_6) {
@@ -1839,8 +2079,14 @@
         <p>The exon the variant is located in could be considered for exon skipping should it fulfill all criteria.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for a knockdown approach', 'Jump to exon skipping', 'q7_1_1_4')">Go to Exon Skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for a knockdown approach.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for a knockdown approach.', 'comment_a7_1_2_2_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_2_2_1" placeholder="Please type your text here.">
+        </div>
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1852,8 +2098,14 @@
         <h2>Eligibility: Unable to assess</h2>
         <p>More information needs to be obtained to make an assessment. Should there already be a knockdown approach available for this variant or any other variant in this gene with sufficient functional evidence, then the variant is eligible.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_a7_1_2_2_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_2_2_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1865,8 +2117,8 @@
         <h2>Is there already an ASO/RNAi/siRNA approach developed for this gene?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_2_2_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_2_2_1_2')">No</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_2_2_1_1', 'comment_q7_1_2_2_1')">Yes</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_2_2_1_2', 'comment_q7_1_2_2_1')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -1885,8 +2137,14 @@
         <h2>Eligibility: Eligible for a knockdown approach.</h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.', 'comment_a7_1_2_2_1_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_2_2_1_1" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1897,8 +2155,14 @@
         <p class="decision-path">Section B - Knockdown assessment</p>
         <h2>Eligibility: Likely eligible for a knockdown approach</h2>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Likely eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Likely eligible for a knockdown approach.', 'comment_a7_1_2_2_1_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_2_2_1_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1910,8 +2174,8 @@
         <h2>Is there already an ASO/RNAi/siRNA approach developed for this gene?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_2_2_2_1')">Yes</button>
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_2_2_2_2')">No</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_2_2_2_1', 'comment_q7_1_2_2_2')">Yes</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_2_2_2_2', 'comment_q7_1_2_2_2')">No</button>
         </div>
         
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -1930,8 +2194,14 @@
         <h2>Eligibility: Eligible for a knockdown approach</h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.', 'comment_a7_1_2_2_2_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_2_2_2_1" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -1944,8 +2214,14 @@
         <p>Please consider an allele-selective knockdown.</p>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for a knockdown approach.', 'comment_a7_1_2_2_2_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_2_2_2_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2015,7 +2291,7 @@
 
                 // Replace the question label with your custom label
                 const customLabel = "Assessment for knockdown";
-                recordAnswer(customLabel, selectedOptions.join(", "));
+                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q6_1_3_2_1');
 
             
             if (intolerant_reduction_7) {
@@ -2050,8 +2326,14 @@
         <h2>Eligibility: Unable to assess</h2>
         <p> More information needs to be obtained to make an assessment. Should there already be a knockdown approach available for this variant or any other variant in this gene, the variant is eligible, otherwise the eligibility is “unable to assess”.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Unable to assess')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Unable to assess', 'comment_a7_1_3_2_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_3_2_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2063,8 +2345,8 @@
         <h2>Has there already been a knockdown approach developed?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on ASO/siRNA availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_3_2_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_3_2_1_2')">No</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_3_2_1_1', 'comment_q7_1_3_2_1')">Yes</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_3_2_1_2', 'comment_q7_1_3_2_1')">No</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2084,8 +2366,14 @@
         <h2>Eligibility: Eligible for a knockdown approach</h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.', 'comment_a7_1_3_2_1_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_3_2_1_1" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2098,8 +2386,14 @@
         <p>Please consider an allele-selective approach for this dominant negative variant.>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Likely eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Likely eligible for a knockdown approach.', 'comment_a7_1_3_2_1_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_3_2_1_2" placeholder="Please type your text here.">
+        </div>
+
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2112,8 +2406,8 @@
         <h2>Has there already been a knockdown approach developed?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on ASO/siRNA availability.>
         <div class="buttons">
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_3_2_2_1')">Yes</button>
-            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_3_2_2_2')">No</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'Yes', 'a7_1_3_2_2_1', 'comment_q7_1_3_2_2')">Yes</button>
+            <button onclick="onAnswer('ASO/siRNA already developed?', 'No', 'a7_1_3_2_2_2', 'comment_q7_1_3_2_2')">No</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2132,8 +2426,14 @@
         <h2>Eligibility: Eligible for a knockdown approach</h2>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Eligible for a knockdown approach.', 'comment_a7_1_3_2_2_1')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_3_2_2_1" placeholder="Please type your text here.">
+        </div>
+       
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2146,8 +2446,14 @@
         <p>Please consider an allele-selective approach for this dominant negative variant.>
         <p>For further information on the classification, please see the <a href="knockdown_table.jpg" target="_blank">classification table</a> for knockdown.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for a knockdown approach.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for a knockdown approach.', 'comment_a7_1_3_2_2_2')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_3_2_2_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2160,8 +2466,14 @@
         <h2> Eligibility: Unable to assess</h2>
         <p>Please obtain further evidence to determine pathomechanism.</p>
         <div class="buttons">
-             <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+             <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_q6_1_4')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q6_1_4" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2174,9 +2486,9 @@
         <h2>What is the pathomechanism of the variant under assessment?</h2>
         <p>For guidance on how to determine the pathomechanism of a given variant, please read “Step 2” of the N1C VARIANT guidelines.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Pathomechanism', 'Loss of function', 'q6_2_1')">Loss of function</button>
-            <button onclick="onAnswer('Pathomechanism', 'Gaim of function', 'q6_2_2')">Gain of function</button>
-            <button onclick="onAnswer('Pathomechanism', 'Unknown', 'a5_2_3')">Unknown</button>
+            <button onclick="onAnswer('Pathomechanism', 'Loss of function', 'q6_2_1', 'comment_q5_2')">Loss of function</button>
+            <button onclick="onAnswer('Pathomechanism', 'Gaim of function', 'q6_2_2', 'comment_q5_2')">Gain of function</button>
+            <button onclick="onAnswer('Pathomechanism', 'Unknown', 'a5_2_3', 'comment_q5_2')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2216,9 +2528,9 @@
         <h2>Is there functional evidence of a splicing effect?</h2>
         <p>For guidance on how to determine whether a variant affects splicing, please see “Step 3” of the N1C VARIANT guidelines. There should be functional evidence of a splicing effect based on e.g., RNAseq, cDNA data. Splice predictions are not considered sufficient evidence.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Splice effect?', 'Yes', 'q8_2_1')">Yes</button>
-            <button onclick="onAnswer('Splice effect?', 'No', 'a7_2_1_1_2')">No</button>
-            <button onclick="onAnswer('Splice effect?', 'Unknown', 'a7_2_1_1_3')">Unknown</button>
+            <button onclick="onAnswer('Splice effect?', 'Yes', 'q8_2_1', 'comment_q7_2_1_1')">Yes</button>
+            <button onclick="onAnswer('Splice effect?', 'No', 'a7_2_1_1_2', 'comment_q7_2_1_1')">No</button>
+            <button onclick="onAnswer('Splice effect?', 'Unknown', 'a7_2_1_1_3', 'comment_q7_2_1_1')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2283,7 +2595,7 @@
             
             // Replace the question label with your custom label
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_2_1');
             
             if (canonical_splicing_destroyed_8 || variant_within_5bp_8) {
             showPage('q9_2_1_3');
@@ -2300,8 +2612,8 @@
         <h2>Has there already been an ASO developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already developed?', 'Yes', 'q9_2_1_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO already developed?', 'No', 'q9_2_1_1_2')">No</button>
+            <button onclick="onAnswer('ASO already developed?', 'Yes', 'q9_2_1_1_1', 'comment_q9_2_1_1')">Yes</button>
+            <button onclick="onAnswer('ASO already developed?', 'No', 'q9_2_1_1_2', 'comment_q9_2_1_1')">No</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2320,8 +2632,8 @@
         <h2>Has there already been an ASO developed for this variant?</h2>
         <p>Please follow the recommendations and criteria outlined in the N1C VARIANT guidelines for sufficient evidence on oligonucleotide availability.</p>
         <div class="buttons">
-            <button onclick="onAnswer('ASO already developed?', 'Yes', 'q9_2_1_1_1')">Yes</button>
-            <button onclick="onAnswer('ASO already developed?', 'No', 'q9_2_1_2_2')">No</button>
+            <button onclick="onAnswer('ASO already developed?', 'Yes', 'q9_2_1_1_1', 'comment_q9_2_1_2')">Yes</button>
+            <button onclick="onAnswer('ASO already developed?', 'No', 'q9_2_1_2_2', 'comment_q9_2_1_2')">No</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2353,8 +2665,14 @@
         <h2>Eligibility: Likely eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
-        <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.')">Finish</button>
+        <button onclick="recordFinalDecision('Eligibility: Likely eligible for splice correction.', 'comment_q9_2_1_1_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q9_2_1_1_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2366,8 +2684,14 @@
         <h2>Eligibility: Unlikely eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
-        <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.')">Finish</button>
+        <button onclick="recordFinalDecision('Eligibility: Unlikely eligible for splice correction.', 'comment_q9_2_1_2_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q9_2_1_2_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2381,8 +2705,14 @@
         <p>Under rare circumstances, the variant could be considered for exon skipping. Please see guidelines “Step 3” for more detailed information. Please review “Section A” for information on exon skipping.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for splice correction.', 'Jump to: Exon skipping', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.', 'comment_q9_2_1_3')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q9_2_1_3" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2393,8 +2723,14 @@
         <p class="decision-path">Step 3 - Splice assessment - Autosomal recessive - Loss of function - Intronic variant</p>
         <h2> Eligibility: Unable to assess</h2>
         <div class="buttons">
-        <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+        <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_a7_2_1_1_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_2_1_1_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2406,8 +2742,14 @@
         <h2>Eligibility: Unable to assess</h2>
         <p> The variant cannot be assessed for splice correction. Please obtain evidence for or against a splicing effect.</p>
         <div class="buttons">
-        <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+        <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_a7_2_1_1_3')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_2_1_1_3" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2420,9 +2762,9 @@
         <h2>Is there functional evidence of a splicing effect?</h2>
         <p>For guidance on how to determine whether a variant affects splicing, please see “Step 3” of the N1C VARIANT guidelines. There should be functional evidence of a splicing effect based on e.g., RNAseq, cDNA data. Splice predictions are not considered sufficient evidence.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Splice effect?', 'Yes', 'q8_2_1_2_1')">Yes</button>
-            <button onclick="onAnswer('Splice effect?', 'No', 'a7_2_1_2_2')">No</button>
-            <button onclick="onAnswer('Splice effect?', 'Unknown', 'a7_2_1_2_3')">Unknown</button>
+            <button onclick="onAnswer('Splice effect?', 'Yes', 'q8_2_1_2_1', 'comment_q7_2_1_2')">Yes</button>
+            <button onclick="onAnswer('Splice effect?', 'No', 'a7_2_1_2_2', 'comment_q7_2_1_2')">No</button>
+            <button onclick="onAnswer('Splice effect?', 'Unknown', 'a7_2_1_2_3', 'comment_q7_2_1_2')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2480,7 +2822,7 @@
             if (none_9) selectedOptions.push("Canonical splicing not affected, Variant more than 15 bp away from nearest canonical splice site");
 
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_2_1_2_1');
  
             if (canonical_splicing_destroyed_9 || variant_within_5bp_9) {
                 showPage('q9_2_1_3');
@@ -2497,8 +2839,14 @@
         <h2> Eligibility: Not eligible for splice correction</h2>
         <p> For further information, please see the  <a href="splice_correction_table.jpg" target="_blank">classification table</a> for splice correction.</p>  
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.', 'comment_a7_2_1_2_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_2_1_2_2" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2510,8 +2858,14 @@
         <h2>Eligibility: Unable to assess </h2>
         <p> The variant cannot be assessed for splice correction. Please obtain evidence for or against a splicing effect.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'omment_a7_2_1_2_3')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_2_1_2_3" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2524,9 +2878,9 @@
         <h2>Is there functional evidence of a splicing effect?</h2>
         <p>For guidance on how to determine whether a variant affects splicing, please see “Step 3” of the N1C VARIANT guidelines. There should be functional evidence of a splicing effect based on e.g., RNAseq, cDNA data. Splice predictions are not considered sufficient evidence.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_2_1_3_1')">Yes</button>
-            <button onclick="onAnswer('Splicing effect?', 'No', 'q7_2_1_3_2')">No</button>
-            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'q7_2_1_3_3')">Unknown</button>
+            <button onclick="onAnswer('Splicing effect?', 'Yes', 'q8_2_1_3_1', 'comment_q7_2_1_3')">Yes</button>
+            <button onclick="onAnswer('Splicing effect?', 'No', 'q7_2_1_3_2', 'comment_q7_2_1_3')">No</button>
+            <button onclick="onAnswer('Splicing effect?', 'Unknown', 'q7_2_1_3_3', 'comment_q7_2_1_3')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2598,7 +2952,7 @@
 
             // Replace the question label with your custom label
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "));
+            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_2_1_3_1');
 
             
             if (canonical_splicing_destroyed_10 || variant_within_5bp_10 || complete_loss_function_10) {
@@ -2621,8 +2975,14 @@
         <p> Variant cannot be assessed for splice correction until further evidence is available. Under certain circumstances, the variant could be assessed for exon skipping.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess.', 'Jump to: Exon skipping', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_a8_2_1_3_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_2_1_3_1" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2636,8 +2996,14 @@
         <p>Variant is not eligible for a splice correction approach but under certain circumstances can be assessed for exon skipping approaches.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for splice correction.', 'Jump to: exon skipping', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.', 'comment_q9_2_1_4')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q9_2_1_4" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2651,8 +3017,15 @@
         <p>The variant is not eligible for splice correction. The variant can be considered for exon skipping.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for splice correction.', 'Jump to: exon skipping', 'q7_1_1_4')">Exon skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.', 'comment_q7_2_1_3_2')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q7_2_1_3_2" placeholder="Please type your text here.">
+        </div>
+        
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2666,8 +3039,14 @@
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Unable to assess.', 'Jump to: exon skipping', 'q7_1_1_4')">Exon skipping</button>
             <button onclick="onAnswer('Eligibility: Unable to assess.', 'Jump to: upregulation from the WT allele', 'a8_1_1_3_2')">WT upregulation</button>
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button> 
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_q7_2_1_3_3')">Finish</button> 
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q7_2_1_3_3" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2681,8 +3060,14 @@
         <p>If the deleted exon is in-frame, the variant is also not applicable to an exon skipping treatment. If the variant is an out-of-frame exon deletion, please check if any of the two adjacent exons could be skipped to get the transcript back into frame, then an exon skipping approach could be considered. If the deleted exon is the first or last coding exon, exon skipping is not a viable option (rare exceptions apply). Please review “Section A” of the N1C VARIANT guidelines.</p>
         <div class="buttons">
             <button onclick="onAnswer('Eligibility: Not eligible for splice correction.', 'Jump to: exon skipping', 'q8_2_1_5_1')">Exon skipping</button>
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.')">Finish</button> 
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction.', 'comment_q7_2_1_5')">Finish</button> 
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q7_2_1_5" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2702,8 +3087,8 @@
         <li>Gene contains only the two coding exon (deleted one and the one to be skipped).</li>
         </ul>
         <div class="buttons">
-            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'Yes', 'a8_2_1_5_1_1')">Yes</button>
-            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'No', 'q9_2_1_5')">No</button>
+            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'Yes', 'a8_2_1_5_1_1', 'comment_q8_2_1_5_1')">Yes</button>
+            <button onclick="onAnswer('Does the exon fulfill one of the not eligible criteria?', 'No', 'q9_2_1_5', 'comment_q8_2_1_5_1')">No</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2723,8 +3108,14 @@
         <p>Please check for exceptions as described in “Section A” of the N1C VARIANT guidelines.</p>
         <p>For further information on the classification, please see the <a href="exon_skipping_table.jpg" target="_blank">classification table</a> for exon skipping.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for exon skipping.', 'comment_a8_2_1_5_1_1')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a8_2_1_5_1_1" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2789,7 +3180,7 @@
                 
                 // Replace the question label with your custom label
                 const customLabel = "Exon properties";
-                recordAnswer(customLabel, selectedOptions.join(", "));
+                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_2_1_5');
 
             
             if (only_functional_domain_11 || important_functional_domain_11 || (multiple_functional_domains_11 && loss_10_percent_11) || pathogenic_loss_11 || mutational_hotspot_11 || pathogenic_inframe_11) {
@@ -2812,8 +3203,14 @@
         <h2> Eligibility: Not eligible for ASO treatment</h2>
         <p> This variant cannot be corrected with an ASO approach.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for ASO treatment.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for ASO treatment.', 'comment_a7_2_1_6')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_2_1_6" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2842,8 +3239,14 @@
         <h2> Eligibility: Unable to assess </h2>
         <p>Please obtain further evidence to determine pathomechanism.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_a5_2_3')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a5_2_3" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2856,10 +3259,10 @@
         <h2>What is the pathomechanism of the variant under assessment?</h2>
         <p>For guidance on how to determine the pathomechanism of a given variant, please read “Step 2” of the N1C VARIANT guidelines.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Pathomechanism', 'Loss of function', 'q6_3_1')">Loss of function</button>
-            <button onclick="onAnswer('Pathomechanism', 'Gain of function', 'q6_3_2')">Gain of function</button>
-            <button onclick="onAnswer('Pathomechanism', 'Dominant negative', 'q6_3_3')">Dominant negative</button>
-            <button onclick="onAnswer('Pathomechanism', 'Unknown', 'q6_3_4')">Unknown</button>
+            <button onclick="onAnswer('Pathomechanism', 'Loss of function', 'q6_3_1', 'comment_q5_3')">Loss of function</button>
+            <button onclick="onAnswer('Pathomechanism', 'Gain of function', 'q6_3_2', 'comment_q5_3')">Gain of function</button>
+            <button onclick="onAnswer('Pathomechanism', 'Dominant negative', 'q6_3_3', 'comment_q5_3')">Dominant negative</button>
+            <button onclick="onAnswer('Pathomechanism', 'Unknown', 'q6_3_4', 'comment_q5_3')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -2897,8 +3300,14 @@
         <h2>Eligibility: Not eligible for splice correction and exon skipping</h2>
         <p>If an exon duplication leads to a loss of function in an XLD disorder, upregulation from the WT allele can be considered. Please review “Section C” in the N1C VARIANT guidelines. For upregulation from the WT allele, we recommend a manual assessment of the different strategies. These cannot be assessed using this calculator. Please also note that for XLD disorders further considerations apply due to X-inactivation. Upregulation from the WT allele is definitely not possible in hemizygotes.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction and exon skipping.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Not eligible for splice correction and exon skipping.', 'comment_a7_1_1_7')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a7_1_1_7" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2939,8 +3348,14 @@
         <h2> Eligibility: Unable to assess</h2>
         <p>Please obtain further evidence to determine pathomechanism.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_q6_3_4')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q6_3_4" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2953,9 +3368,9 @@
         <h2>What is the pathomechanism of the variant under assessment?</h2>
         <p>For guidance on how to determine the pathomechanism of a given variant, please read “Step 2” of the N1C VARIANT guidelines.</p>
         <div class="buttons">
-            <button onclick="onAnswer('Pathomechanism', 'Loss of function', 'q7_4_1')">Loss of function</button>
-            <button onclick="onAnswer('Pathomechanism', 'Gain of function','q7_4_2')">Gain of function</button>
-            <button onclick="onAnswer('Pathomechanism', 'Unknown', 'a5_4_3')">Unknown</button>
+            <button onclick="onAnswer('Pathomechanism', 'Loss of function', 'q7_4_1', 'comment_q5_4')">Loss of function</button>
+            <button onclick="onAnswer('Pathomechanism', 'Gain of function','q7_4_2', 'comment_q5_4')">Gain of function</button>
+            <button onclick="onAnswer('Pathomechanism', 'Unknown', 'a5_4_3', 'comment_q5_4')">Unknown</button>
         </div>
 
         <p>Optional: Please provide any evidence, e.g. link, publication, website, or written explanation, for your choice of answer. This evidence will be shown in the answer log alongside with all your other answers.</p>
@@ -3006,8 +3421,14 @@
         <h2> Eligibility: Unable to assess.</h2>
         <p>Please obtain further evidence to determine pathomechanism.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_a5_4_3')">Finish</button>
         </div>
+        
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_a5_4_3" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -3021,8 +3442,15 @@
         <h2>Eligibility: Unable to assess</h2>
         <p>Mitochondrially inherited disorders cannot be analyzed using these guidelines. </p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_q5_5')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q5_5" placeholder="Please type your text here.">
+        </div>
+        
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -3035,8 +3463,14 @@
         <h2>Eligibility: Unable to assess</h2>
         <p>Please check with referring clinician or patient (family) on more information regarding the inheritance pattern.</p>
         <div class="buttons">
-            <button onclick="recordFinalDecision('Eligibility: Unable to assess.')">Finish</button>
+            <button onclick="recordFinalDecision('Eligibility: Unable to assess.', 'comment_q5_6')">Finish</button>
         </div>
+
+        <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
+        <div class="comment-box">
+        <input type="text" id="comment_q5_6" placeholder="Please type your text here.">
+        </div>
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
