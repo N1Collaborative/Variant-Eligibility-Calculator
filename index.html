@@ -586,11 +586,17 @@
 
             // Retrieve user comment properly
             const commentInput = document.getElementById('comment_q8_1_1');
-            const userComment = commentInput ? commentInput.value.trim() : "";  // Ensure the value is retrieved
+            const userComment = commentInput ? commentInput.value.trim() : ""; // Ensure it's a string
 
             // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), userComment);  // Pass the actual comment value
+            let logEntry = `<p><strong>${customLabel}</strong>: ${selectedOptions.join(", ")}</p>`;
+
+            if (userComment !== "") {
+            logEntry += `<p><strong>Comment:</strong> ${userComment}</p>`;
+            }
+
+            recordAnswer(logEntry);  // Pass the full entry as a single string
             
             if (canonical_splicing_destroyed_1 || variant_within_5bp_1) {
                 showPage('q9_1_1_3');
