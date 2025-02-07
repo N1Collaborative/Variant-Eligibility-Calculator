@@ -396,6 +396,10 @@
             <button onclick="onAnswer('Inheritance pattern', 'Mitochondrial', 'q5_5')">Mitochondrial</button>
             <button onclick="onAnswer('Inheritance pattern', 'Unknown', 'q5_6')">Unknown</button>
         </div>
+
+         <!-- Text input field -->
+        <input type="text" id="userComment_q8_1_1" placeholder="Optional: Please provide evidence, e.g. a link or explanation on chosen inheritance pattern." style="width: 80%; margin-bottom: 10px;">
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
@@ -2871,34 +2875,60 @@
     window.newTab = newTab;
     }
 
+// Function to record answers and update the log in the new tab
+function recordAnswer(question, answer, comment = "") {
+    let logEntry = `<p><strong>${question}</strong>: ${answer}</p>`;
 
-    // Function to record answers and update the log in the new tab
-    function recordAnswer(question, answer) {
-        answerLog += `<p><strong>${question}</strong>: ${answer}</p>`;
-        
-        if (window.newTab && !window.newTab.closed) {
-            const logDiv = window.newTab.document.getElementById('log');
-            logDiv.innerHTML = answerLog;
+    // If there's a user comment, add it to the log entry
+    if (comment.trim() !== "") {
+        logEntry += `<p><strong>Comment:</strong> ${comment}</p>`;
+    }
+
+    answerLog += logEntry;
+
+    if (window.newTab && !window.newTab.closed) {
+        const logDiv = window.newTab.document.getElementById('log');
+        logDiv.innerHTML = answerLog;
+    }
+}
+
+// Function to record an answer and navigate to the next page
+function onAnswer(question, answer, nextPageId, commentFieldId = null) {
+    let userComment = "";
+    
+    // If a comment field ID is provided, get the user input
+    if (commentFieldId) {
+        const commentInput = document.getElementById(commentFieldId);
+        if (commentInput) {
+            userComment = commentInput.value.trim();
         }
     }
 
-    // Function to record an answer and navigate to the next page
-    function onAnswer(question, answer, nextPageId) {
-        recordAnswer(question, answer);
-        showPage(nextPageId);
+    recordAnswer(question, answer, userComment);
+    showPage(nextPageId);
+}
+
+// Function to record the final decision
+function recordFinalDecision(decision, commentFieldId = null) {
+    let userComment = "";
+    
+    // If a comment field ID is provided, get the user input
+    if (commentFieldId) {
+        const commentInput = document.getElementById(commentFieldId);
+        if (commentInput) {
+            userComment = commentInput.value.trim();
+        }
     }
 
-    // Function to record the final decision
-        function recordFinalDecision(decision) {
-            // Record the final decision in the log
-            recordAnswer('Assessment outcome', decision);
-            
-            // Alert the user that the decision was recorded
-            alert('Final decision recorded in log.');
+    // Record the final decision in the log
+    recordAnswer('Assessment outcome', decision, userComment);
+    
+    // Alert the user that the decision was recorded
+    alert('Final decision recorded in log.');
 
-            // Navigate back to the start page or any other page you prefer
-            showPage('startPage');
-        }
+    // Navigate back to the start page or any other page you prefer
+    showPage('startPage');
+}
    
 </script>
 </body>
