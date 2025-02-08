@@ -584,19 +584,16 @@
             if (intronic_variant_downstream_1) selectedOptions.push("Intronic variant >50 bp downstream of donor splice site");
             if (intronic_variant_within_1) selectedOptions.push("Intronic variant within -6 to -100 bp or +6 to +50 bp of the canonical splice sites");
 
-             // Retrieve comment safely
-            let userComment = "";
-            const commentInput = document.getElementById('comment_q8_1_1');
+            function evaluateQ8_1_1() {
+            const commentInput = document.getElementById('comment_q8_1_1');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
 
-            if (commentInput) {  // Ensure the element exists before accessing its value
-            userComment = commentInput.value.trim();
-            }
+            // Show an alert with the retrieved comment
+            alert("Retrieved Comment: " + userComment);
 
-            console.log("Comment Retrieved:", userComment);  // Debugging output
-
-            // Log the selected options + comment (only if comment is provided)
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);  
+            }
 
             
             if (canonical_splicing_destroyed_1 || variant_within_5bp_1) {
