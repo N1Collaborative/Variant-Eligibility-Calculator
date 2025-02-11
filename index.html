@@ -588,9 +588,6 @@
             const commentInput = document.getElementById('comment_q8_1_1');  
             const userComment = commentInput ? commentInput.value.trim() : "";  
 
-            // Show an alert with the retrieved comment (for debugging)
-            alert("Retrieved Comment: " + userComment);
-
             // Log the selected options + comment
             const customLabel = "Variant characteristics";
             recordAnswer(customLabel, selectedOptions.join(", "), userComment);
@@ -3639,8 +3636,6 @@ function recordFinalDecision(decision, commentFieldId = null) {
     // Record the final decision in the log
     recordAnswer('Assessment outcome', decision, userComment);
 
-    // Alert the user that the decision was recorded
-    alert('Final decision recorded in log.');
 
     // Navigate back to the start page or any other page you prefer
     showPage('startPage');
