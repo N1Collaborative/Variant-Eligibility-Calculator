@@ -872,9 +872,13 @@
             if (none_2) selectedOptions.push("Canonical splicing not affected, Variant more than 15 bp away from nearest canonical splice site");
             
 
-            // Replace the question label with your custom label
+            // Get the user comment
+            const commentInput = document.getElementById('comment_q8_1_1_2_1');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_1_1_2_1');
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
             if (canonical_splicing_destroyed_2 || variant_within_5bp_2) {
                 showPage('q9_1_1_3');
@@ -1003,9 +1007,13 @@
             if (amino_acid_benign_3) selectedOptions.push("Change on protein/amino acid level known to be benign");
             
             
-            // Replace the question label with your custom label
+            // Get the user comment
+            const commentInput = document.getElementById('comment_q8_1_1_3_1');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_1_1_3_1');
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
     
             if (canonical_splicing_destroyed_3 || variant_within_5bp_3 || amino_acid_complete_lof_3) {
                 showPage('q9_1_1_6');
@@ -1355,10 +1363,14 @@
                 if (pathogenic_4) selectedOptions.push("Exon skipping shown to be pathogenic");
                 if (in_frame_deletions_4) selectedOptions.push("Functional evidence of in-frame deletions shown to be pathogenic");
                 if (none_4) selectedOptions.push("No specific characteristics. Small, in-frame exon without a known functional domain.");
-                
-                // Replace the question label with your custom label
+
+                // Get the user comment
+                const commentInput = document.getElementById('comment_q8_1_3');  
+                const userComment = commentInput ? commentInput.value.trim() : "";  
+
+                // Log the selected options + comment
                 const customLabel = "Exon properties";
-                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_1_3');
+                recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
 
                 if (loss_only_domain_4 || loss_important_domain_4 || (loss_10_percent_4 && loss_multiple_domains_4) || pathogenic_4 || mutational_hotspot_4 || in_frame_deletions_4) {
@@ -1635,10 +1647,14 @@
                 if (shown_pathogenic_5) selectedOptions.push("Loss of both exons combined shown to be pathogenic");
                 if (evidence_pathogenic_5) selectedOptions.push("Functional evidence of in-frame deletions in either exon shown to be pathogenic");
                 if (none_5) selectedOptions.push("No specific characteristics. Small, in-frame deletion of both exons without a known functional domain.");
-                
-                // Replace the question label with your custom label
-                const customLabel = "Exon and deleted exon properties";
-                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_1_1_5');
+           
+            // Get the user comment
+            const commentInput = document.getElementById('comment_q9_1_1_5');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
+            const customLabel = "Exon and deleted exon properties";
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
             if (loss_only_functional_domain_5 || loss_important_functional_domain_5 || (loss_10_percent_5 && loss_multiple_functional_domains_5) || shown_pathogenic_5 || mutational_hotspot_5 || evidence_pathogenic_5) {
                 showPage('a8_1_3_1');
@@ -1918,10 +1934,13 @@
             if (variant_within_6to15bp_2_1) selectedOptions.push("Variant within 6 to 15 bp of canonical splice site");
             if (none_2_1) selectedOptions.push("Canonical splicing not affected, Variant more than 15 bp away from nearest canonical splice site");
             
+            // Get the user comment
+            const commentInput = document.getElementById('comment_q9_3');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
 
-            // Replace the question label with your custom label
+            // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_3');
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
             if (canonical_splicing_destroyed_2_1 || variant_within_5bp_2_1) {
                 showPage('q9_1_1_6');
@@ -1984,10 +2003,13 @@
             if (intronic_variant_downstream_1_1) selectedOptions.push("Intronic variant >50 bp downstream of donor splice site");
             if (intronic_variant_within_1_1) selectedOptions.push("Intronic variant within -6 to -100 bp or +6 to +50 bp of the canonical splice sites");
 
-            // Log the selected options
-            // Replace the question label with your custom label
+             // Get the user comment
+            const commentInput = document.getElementById('comment_q9_4');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_4');
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
             
             if (canonical_splicing_destroyed_1_1 || variant_within_5bp_1_1) {
                 showPage('q9_1_1_6');
@@ -2058,9 +2080,13 @@
                 if (intolerant_reduction_6) selectedOptions.push("Intolerant to reduction (very strict control of gene dosage)");
                 if (none_6) selectedOptions.push("No criteria");
 
-                // Replace the question label with your custom label
+                // Get the user comment
+                const commentInput = document.getElementById('comment_q7_1_2_2');  
+                const userComment = commentInput ? commentInput.value.trim() : "";  
+
+                // Log the selected options + comment
                 const customLabel = "Assessment for knockdown";
-                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q7_1_2_2');
+                recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
                 
                 if (intolerant_reduction_6) {
@@ -2293,9 +2319,13 @@
                 if (intolerant_reduction_7) selectedOptions.push("Intolerant to reduction (very strict control of gene dosage)");
                 if (none_7) selectedOptions.push("No criteria");
 
-                // Replace the question label with your custom label
-                const customLabel = "Assessment for knockdown";
-                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q6_1_3_2_1');
+             // Get the user comment
+            const commentInput = document.getElementById('comment_q6_1_3_2_1');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
+            const customLabel = "Assessment for knockdown";
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
             
             if (intolerant_reduction_7) {
@@ -2597,9 +2627,13 @@
             if (intronic_variant_within_8) selectedOptions.push("Intronic variant within -6 to -100 bp or +6 to +50 bp of the canonical splice sites");
 
             
-            // Replace the question label with your custom label
+            // Get the user comment
+            const commentInput = document.getElementById('comment_q8_2_1');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_2_1');
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
             
             if (canonical_splicing_destroyed_8 || variant_within_5bp_8) {
             showPage('q9_2_1_3');
@@ -2825,8 +2859,13 @@
             if (variant_within_6_15bp_9) selectedOptions.push("Variant within 6 to 15 bp of canonical splice site");
             if (none_9) selectedOptions.push("Canonical splicing not affected, Variant more than 15 bp away from nearest canonical splice site");
 
+            // Get the user comment
+            const commentInput = document.getElementById('comment_q8_2_1_2_1');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_2_1_2_1');
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
  
             if (canonical_splicing_destroyed_9 || variant_within_5bp_9) {
                 showPage('q9_2_1_3');
@@ -2954,9 +2993,13 @@
             if (partial_loss_function_10) selectedOptions.push("Change in amino acid sequence causes partial loss of function/reduced protein function");
             if (known_benign_10) selectedOptions.push("Change on protein/amino acid level known to be benign");
 
-            // Replace the question label with your custom label
+            // Get the user comment
+            const commentInput = document.getElementById('comment_q8_2_1_3_1');  
+            const userComment = commentInput ? commentInput.value.trim() : "";  
+
+            // Log the selected options + comment
             const customLabel = "Variant characteristics";
-            recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q8_2_1_3_1');
+            recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
             
             if (canonical_splicing_destroyed_10 || variant_within_5bp_10 || complete_loss_function_10) {
@@ -3181,10 +3224,14 @@
                 if (pathogenic_loss_11) selectedOptions.push("Exon skipping shown to be pathogenic");
                 if (pathogenic_inframe_11) selectedOptions.push("Functional evidence of in-frame deletions shown to be pathogenic");
                 if (none_11) selectedOptions.push("No specific characteristics. Small, in-frame exon without a known functional domain.");
-                
-                // Replace the question label with your custom label
-                const customLabel = "Exon properties";
-                recordAnswer(customLabel, selectedOptions.join(", "), 'comment_q9_2_1_5');
+
+               // Get the user comment
+                const commentInput = document.getElementById('comment_q9_2_1_5');  
+                const userComment = commentInput ? commentInput.value.trim() : "";  
+
+                // Log the selected options + comment
+                const customLabel = "Variant characteristics";
+                recordAnswer(customLabel, selectedOptions.join(", "), userComment);
 
             
             if (only_functional_domain_11 || important_functional_domain_11 || (multiple_functional_domains_11 && loss_10_percent_11) || pathogenic_loss_11 || mutational_hotspot_11 || pathogenic_inframe_11) {
