@@ -3609,15 +3609,22 @@
     // Now inject the jsPDF script and attach the download button function
     const scriptTag = newTab.document.createElement('script');
     scriptTag.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
-    scriptTag.onload = function() {
+    scriptTag.onload = function () {
         // Attach the downloadLog function after jsPDF is loaded
-        newTab.document.getElementById('downloadBtn').addEventListener('click', function() {
+        newTab.document.getElementById('downloadBtn').addEventListener('click', function () {
             const { jsPDF } = newTab.jspdf;
             const doc = new jsPDF();
             const logContent = newTab.document.getElementById('log').innerText;
 
-            doc.text(logContent, 10, 10); // Add log content to the PDF
-            doc.save('log.pdf'); // Save the PDF as 'log.pdf'
+            // Calculate usable width and wrap text
+            const margin = 10;
+            const pageWidth = doc.internal.pageSize.getWidth();
+            const maxLineWidth = pageWidth - margin * 2;
+            const wrappedText = doc.splitTextToSize(logContent, maxLineWidth);
+
+            // Add wrapped text to the PDF
+            doc.text(wrappedText, margin, 10);
+            doc.save('log.pdf');
         });
     };
 
