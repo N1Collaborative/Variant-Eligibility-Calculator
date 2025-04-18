@@ -3610,20 +3610,33 @@
     const scriptTag = newTab.document.createElement('script');
     scriptTag.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
     scriptTag.onload = function () {
-        // Attach the downloadLog function after jsPDF is loaded
         newTab.document.getElementById('downloadBtn').addEventListener('click', function () {
             const { jsPDF } = newTab.jspdf;
             const doc = new jsPDF();
+
             const logContent = newTab.document.getElementById('log').innerText;
 
-            // Calculate usable width and wrap text
-            const margin = 10;
-            const pageWidth = doc.internal.pageSize.getWidth();
-            const maxLineWidth = pageWidth - margin * 2;
-            const wrappedText = doc.splitTextToSize(logContent, maxLineWidth);
+            const marginLeft = 10;
+            const marginTop = 10;
+            const lineHeight = 10;
 
-            // Add wrapped text to the PDF
-            doc.text(wrappedText, margin, 10);
+            const pageHeight = doc.internal.pageSize.getHeight();
+            const pageWidth = doc.internal.pageSize.getWidth();
+            const maxLineWidth = pageWidth - marginLeft * 2;
+
+            const lines = doc.splitTextToSize(logContent, maxLineWidth);
+
+            let currentY = marginTop;
+
+            lines.forEach(line => {
+                if (currentY + lineHeight > pageHeight - marginTop) {
+                    doc.addPage();
+                    currentY = marginTop;
+                }
+                doc.text(line, marginLeft, currentY);
+                currentY += lineHeight;
+            });
+
             doc.save('log.pdf');
         });
     };
