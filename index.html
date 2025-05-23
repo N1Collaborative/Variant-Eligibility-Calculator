@@ -112,6 +112,16 @@
             text-align: center; /* Center text inside the input */
         }
 
+        .comment-box textarea {
+            width: 60%; /* Match input field width or adjust */
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+            text-align: left; /* Left-align text in textarea */
+        }
+
         /* Footer styling */
         .footer {
             background-color: #f1f1f1;
@@ -230,8 +240,8 @@
         
         <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
         <div class="comment-box">
-        <input type="text" id="comment_a1" placeholder="Please type your text here.">
-        </div> 
+            <textarea id="comment_a1" rows="10" placeholder="Please type your text here."></textarea>
+        </div>
 
         
         <div class="navigation-buttons">
