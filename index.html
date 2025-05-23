@@ -31,6 +31,7 @@
             overflow: auto; /* Allows scrolling within the content if needed */
             box-sizing: border-box;
             width: 100%;
+
         }
 
         .container {
@@ -100,7 +101,16 @@
             justify-content: center;
             margin-bottom: 15px;
         }
-       
+
+        /* Style the input field */
+        .comment-box input {
+            width: 60%; /* Adjust width as needed */
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center; /* Center text inside the input */
+        }
 
         /* Footer styling */
         .footer {
@@ -135,18 +145,6 @@
 
         .aligned-list li {
             margin-bottom: 10px;
-        }
-            
-        .comment-box textarea {
-          width: 100%;
-          max-width: 600px;
-          font-size: 14px;
-          padding: 10px;
-          border-radius: 6px;
-          border: 1px solid #ccc;
-          resize: vertical; /* allows vertical resizing only */
-        }
-            
     </style>
 </head>
     
@@ -232,8 +230,9 @@
         
         <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
         <div class="comment-box">
-            <textarea id="comment_a1" placeholder="Please type your text here."></textarea>
+        <input type="text" id="comment_a1" placeholder="Please type your text here.">
         </div> 
+
         
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
@@ -282,9 +281,9 @@
 
         <p>Optional: Please provide any final thoughts, comments, and evidence for the assessment.</p>
         <div class="comment-box">
-            <textarea id="comment_a2" placeholder="Please type your text here.></textarea>
+        <input type="text" id="comment_a2" placeholder="Please type your text here.">
         </div> 
-                
+        
         <div class="navigation-buttons">
             <button onclick="goBack()">Back</button>
             <button onclick="showPage('startPage')">Back to Start</button>
