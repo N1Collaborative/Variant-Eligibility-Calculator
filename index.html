@@ -159,17 +159,47 @@
 </head>
     
 <body>
-    <div class="wrapper">
-        <div id="startPage" class="container" style="display: flex;">
-            <img src="N1C_logo.jpg" alt="N1C logo" style="max-width: 50%; height: auto; margin-bottom: 20px;">
-            <h1>N1C Variant Eligibility Calculator</h1>
-            <div class="large-buttons">
-                <button onclick="showPage('infoPage')">Start</button>
-            </div>
-            <div class="buttons">
-                <button onclick="showPage('disclaimer')">Disclaimer</button>
-            </div>
+   <div class="wrapper">
+    <div id="startPage" class="container" style="display: flex;">
+
+        <img src="N1C_logo.jpg"
+             alt="N1C logo"
+             style="max-width: 25%; height: auto; margin-bottom: 15px;">
+
+        <h1>N1C Variant Eligibility Calculator</h1>
+
+        <div style="
+            background:#fff3cd;
+            border:1px solid #ffe69c;
+            padding:18px;
+            border-radius:8px;
+            margin:20px 0;
+            text-align:center;
+            max-width:700px;">
+            
+            <strong>This calculator is being discontinued.</strong><br><br>
+
+            A new version, the <strong>AVEC (Advanced Variant Eligibility Calculator)</strong>,
+            is now available and should be used going forward.
+
+            <br><br>
+
+            <button onclick="window.open('https://avec.uni-koeln.de/', '_blank')"
+                    style="font-size:1.1em; padding:12px 24px;">
+                Go to AVEC
+            </button>
         </div>
+
+        <div class="large-buttons">
+            <button onclick="showPage('infoPage')">Start</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="showPage('disclaimer')">Disclaimer</button>
+        </div>
+
+    </div>
+</div>
 
 
      <!-- Information Page -->
